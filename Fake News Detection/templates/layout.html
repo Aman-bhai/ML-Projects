@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML App</title>
+    <link rel="icon" href="{{url_for('static',filename='css/android-chrome-192x192.png')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/signup.css')}}">
+</head>
+<body>
+
+  <div class="outer-box" style=' align-items: center; justify-content: center; background-image:url({{url_for('static',filename='css/machine-learning1.png')}}); background-size:50%;background-color:#1a1a1a;'>
+    <div class="inner-box">
+        <header class="signup-header">
+            <h1>
+                Machine Learning
+
+            </h1>
+			<h3 style="color:green;"><br>Fake News Detection</h3>
+        </header>
+        <main class="signup-body">
+          {% for x in prediction %}
+          <span style="color:red;">{{x}}</span>
+        {% endfor %}
+            </form>
+          <footer class="sigup-footer">
+            
+          </footer>
+        </main>
+    </div>
+    <div class="circle c1" STYLE="background-image: url({{url_for('static',filename='css/R2.png')}}); top:280px;left:0px;">
+      <div class="circle c2" STYLE="background-image: url({{url_for('static',filename='css/R1.png')}});top:30px; right:0px; left:1100px;">
+       
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
